@@ -1,0 +1,18 @@
+{
+    "Title": "Formulaire d'inscription",
+    "Name": "Nom",
+    "nameRequired": "Le nom est requis.",
+    "minName": "Le nom doit comporter au moins 2 caractères.",
+    "dob": "Date de naissance",
+    "mobile": "Mobile",
+    "mobileRequired": "Le numéro de portable est requis.",
+    "onlynumbers": "Seules les valeurs numériques sont autorisées.",
+    "submit": "Soumettre",
+    "Required": "Obligatoire",
+    "requiredFields": "Veuillez remplir les champs requis",
+    "registered": "Enregistré avec succès!",
+    "registrationMsg": "Vous êtes enregistré avec succès",
+    "Failed": "Échoué",
+    "registrationFail": "Échec de l'enregistrement",
+    "ok": "d'accord"
+}

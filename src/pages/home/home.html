@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-item lines="full">
+    <ion-select [(ngModel)]="language" [value]="language" (ionChange)="changeLanguage()">
+      <ion-option value="en">English</ion-option>
+      <ion-option value="es">Spanish</ion-option>
+      <ion-option value="fr">French</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+
+    <ion-item lines="full">
+      <ion-label position="floating" [translate]="'Name'"></ion-label>
+      <ion-input formControlName="name" type="text"></ion-input>
+    </ion-item>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.name.errors?.required" [translate]="'nameRequired'"></span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.name.errors?.minlength" [translate]="'minName'"></span>
+
+    <ion-item lines="full">
+      <ion-label position="floating" [translate]="'dob'"></ion-label>
+      <ion-datetime (ionChange)="getDate()" formControlName="dob" [value]="defaultDate"></ion-datetime>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating" [translate]="'mobile'"></ion-label>
+      <ion-input maxlength="10" formControlName="mobile" type="text" required></ion-input>
+    </ion-item>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.mobile.errors?.required" [translate]="'mobileRequired'"></span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.mobile.errors?.pattern" [translate]="'onlynumbers'"></span>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button type="submit" color="danger" expand="block">{{submit}}</button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

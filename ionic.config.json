@@ -1,0 +1,7 @@
+{
+  "name": "registration-form",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,18 @@
+{
+    "Title": "Registration Form",
+    "Name": "Name",
+    "nameRequired": "Name is required.",
+    "minName": "Name should be min 2 chars long.",
+    "dob": "Date of Birth",
+    "mobile": "Mobile",
+    "mobileRequired": "Mobile number is required.",
+    "onlynumbers": "Only numerical values allowed.",
+    "submit": "Submit",
+    "Required": "Required",
+    "requiredFields": "Please fill the required fields",
+    "registered": "Registered Successfully!",
+    "registrationMsg": "You are registered successfully",
+    "Failed": "Failed",
+    "registrationFail": "Registration failed",
+    "ok": "OK"
+}
